@@ -1,0 +1,147 @@
+body{
+    background-color: #6870a4
+}
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;1,600&display=swap');
+
+  :root{
+    --primer-color: #ffffff;
+    --segundo-color: rgb(61,68,73);
+    --color-hover: #3282b8;
+
+
+    --status-practica--color: greenyellow;
+    --status-Pausa--color: #ffa07a;
+  }
+
+  .material-icons{
+    font-size: 18px !important;
+    background-color: transparent !important;
+  }
+  .container{
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--segundo-color);
+    border-radius: 3px;
+    color: var(--primer-color);
+    width: 800px;
+    margin: 0 auto;
+    font-size: 15px;
+  }
+.container .nav-icons{
+    padding: 12px;
+    display: inline-block;
+    width: 50%;
+}
+
+.tools{
+    display: inline;
+}
+li{
+    display: inline-block;
+}
+.search{
+    display: inline-block;
+    width: 30%;
+    margin-left: 15%;
+}
+
+.search-input{
+    background-color:rgb(102, 105, 107);;
+    border-radius:3px;
+    border:solid 1 px var(--segundo-color);
+    color: var(--primer-color);
+}
+.lista{
+   padding-left: 0;
+}
+.items{
+
+    width: 40%;
+    display: inline;
+    margin-right: 10%;
+}
+.pagina{
+    width: 49%;
+    display: inline-block;
+    margin-left: 20%;
+    text-align: center;
+}
+
+
+button, span{
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--primer-color);
+    border: none;
+    padding: 6px 12px;
+}
+.active{
+    background-color: var(--color-hover);
+}
+ul li  :hover{
+    background-color: var(--color-hover);
+    border-radius: 3px;
+}
+caption{
+    font-size: 20px;
+    font-weight: 800;
+}
+table{
+    width: 100%;
+    border-collapse: initial;
+    border-spacing: 0;
+}
+
+th{
+    padding: 12px;
+    font-weight: bolder;
+    text-align: left;
+    border-bottom: solid 1px rgb(102, 105, 107);
+}
+td{
+    padding: 12px;
+    border-bottom: solid 1px rgb(102, 105, 107);
+}
+nav{
+    border-bottom: solid 1px rgb(102, 105, 107);
+}
+tr:nth-child(even){
+background-color: rgb(102, 105, 107) ;
+}
+tr:hover{
+    background-color: #3282b8;
+}
+tr .practica::after, tr .Pausa::after{
+    display: inline-block;
+    vertical-align: middle;}
+    tr .practica::after{
+        content: 'Practica';
+        color:  var(--status-practica--color);
+    }
+    tr .Pausa::after{
+        content: 'Pausa';
+        color:  var(--status-Pausa--color);
+    }
+    tr .practica::before{
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin-right: 1px;
+        border-radius: 50%;
+        vertical-align: middle;
+    }
+    tr .practica::before{
+        background-color: var(--status-practica--color);
+    }
+    tr .Pausa::before{
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin-right: 1px;
+        border-radius: 50%;
+        vertical-align: middle;
+    }
+    tr .Pausa::before{
+        background-color: var(--status-Pausa--color);
+    }
